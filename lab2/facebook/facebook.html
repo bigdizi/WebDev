@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Facebook login page</title>
+    <style>
+        hr{
+            color: #dddfe2;
+        }
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            background: white;
+        }
+        input{
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 17px;
+            width: 370px;
+            margin: 6px;
+            padding: 10px;
+        }
+        .button{
+            height: 40px;
+            width: 370px;
+            padding: 6px;
+            background-color: rgb(24, 119, 242);
+            border:none;
+            border-radius: 5px;
+            color:white;
+        }
+        .footer{
+            background-color: #fff;
+            font-size: inherit;
+            padding: 20px 0 0;
+            width: 100%;
+            color: gray;
+        }
+        .footer-inner{
+            padding: 0 270px;
+            
+        }
+        .lang{
+            padding-top: 20px;
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .lang a{
+            margin-left: 12px;
+        }
+        .lang a:first-child{
+            margin-left: 0px;
+        }
+        .inputs{
+            margin-bottom: 10px;
+            vertical-align: middle;
+        }
+        .enter{
+            margin-bottom: 10px;
+        }
+        .body-container{
+            padding-top: 72px;
+            padding-bottom: 212px;
+            background: #f0f2f5;
+        }
+        .content{
+            padding: 0 250px;
+        }
+        .logo{
+            width: 306px;
+        }
+        .login-container{
+            display: inline-block;
+            margin-left: 30px;
+        }
+        .login-form{
+            background-color: #fff;
+            margin:auto;
+            margin-top: 40px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            width: 396px;
+            padding: 5px;
+            text-align: center; 
+        }
+        .create-acc{
+            margin: 20px 0px;
+        }
+        .descr{
+            display: inline-block;
+            margin: 0px 30px 0px 0px;
+        }
+        .password-link{
+            margin: 15px 0px;
+        }
+        .divisor{
+            margin-bottom: 6px;
+        }
+        .links{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .copyright{
+            height: auto;
+        }
+        .links a{
+            margin-right: 20px;
+        }
+        .links a:last-child{
+            margin-right: 0;
+        }
+        a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #lang-btn{
+            padding: 1px;
+            border-radius: 3px;
+            border: 1px solid rgb(135, 135, 135);
+            cursor: pointer;
+        
+        }
+        #lang-btn img{
+            align-items: center;
+            vertical-align: middle;
+        }
+        #slogan{
+            font-size: 28px;
+        }
+        #registr{
+            font-weight: bold;
+        }
+        #forget-link{
+            font:inherit;
+            font-weight: 500;
+            font-size: 14px;
+            color: rgb(24, 119, 242);
+        }
+        #new-acc{
+            width: 66%;
+            background-color: #42b72a;
+        }
+        #text-form{
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+   <div class="body-container">
+       <div class="content">
+           <div class="descr">
+                <div class="logo">
+                    <img src="facebook.svg" alt ="facebook logo">
+                </div>
+                <div id="slogan">
+                    <p>Facebook помогает вам всегда<br>
+                    оставаться на связи и общаться со<br>
+                    своими знакомыми.</p>
+                </div>
+           </div>
+        <div class="login-container">
+            <fieldset class="login-form">
+                <form>
+                   <div class="inputs">
+                        <div>
+                            <input type="text" placeholder="Электронный адрес или номер телефона">
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Пароль">
+                        </div>
+                   </div>
+                   <div class="enter">
+                       <button class="button"><strong>Вход</strong></button><br>
+                   </div>
+                    <div class="password-link">
+                        <a id="forget-link">Забыли пароль?</a>
+                    </div>
+                    <hr>
+                    <div class="create-acc">
+                        <button class="button" id="new-acc"><strong>Создать новый аккаунт</strong></button>
+                    </div>
+                </form>
+            </fieldset>
+            <div id="text-form">
+                <p><a id="registr">Создать Страницу</a> знаменитости, музыкальной группы или компании.</p>
+            </div>
+        </div>
+       </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="lang">
+                    <a>Русский </a>
+                    <a>English (US) </a>
+                    <a>Türkçe </a>
+                    <a>Bahasa Indonesia </a>
+                    <a>中文(简体) </a>
+                    <a>Қазақша </a>
+                    <a>Deutsch </a>
+                    <a>한국어 </a>
+                    <a>Shqip </a>
+                    <a>Español </a>
+                    <a>Português (Brasil) </a>
+                    <a role="button" id="lang-btn"><img src="C:\Users\Acer\Downloads\Web dev\lab2\icons8-plus-math-24.png"></a>
+                </div>
+                <hr class="divisor">
+                <div class="links">
+                    <a>Регистрация</a>
+                    <a>Вход</a>
+                    <a>Messenger</a>
+                    <a>Facebook Lite</a>
+                    <a>Watch</a>
+                    <a>Места</a>
+                    <a>Игры</a>
+                    <a>Marketplace</a>
+                    <a>Meta Pay</a>
+                    <a>Oculus</a>
+                    <a>Portal</a>
+                    <a>Instagram</a>
+                    <a>Bulletin</a>
+                    <a>Благотворительные акции</a>
+                    <a>Услуги</a>
+                    <a>Центр информации о выборах</a>
+                    <a>Политика конфиденциальности</a>
+                    <a>Центр конфиденциальности</a>
+                    <a>Группы</a>
+                    <a>Информация</a>
+                    <a>Создать рекламу</a>
+                    <a>Создать Страницу</a>
+                    <a>Разработчикам</a>
+                    <a>Вакансии</a>
+                    <a>Файлы cookie</a>
+                    <a>Рекламные предпочтения</a>
+                    <a>Условия использования</a>
+                    <a>Справка</a>
+                    <a>Загрузка контактов и лица, не являющиеся пользователями</a>
+                </div>
+                <div class="copyright">
+                    Meta © 2024
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
